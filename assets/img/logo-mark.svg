@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Bidesiya logo mark (48×48) — the "बि" letterform.
+  A small rising sun disc floats above the ि-matra hook — the migrant
+  leaving at sunrise, the story hiding inside the letter itself.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="Bidesiya">
+  <defs>
+    <linearGradient id="lm-bg" x1="0.15" y1="0.05" x2="0.85" y2="0.95">
+      <stop offset="0"    stop-color="#F43F5E"/>
+      <stop offset="0.55" stop-color="#F97316"/>
+      <stop offset="1"    stop-color="#FBBF24"/>
+    </linearGradient>
+    <radialGradient id="lm-glow" cx="0.32" cy="0.2" r="0.35">
+      <stop offset="0" stop-color="#FFF7ED" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#FFF7ED" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Sunrise-gradient rounded square -->
+  <rect width="48" height="48" rx="13" fill="url(#lm-bg)"/>
+  <!-- Soft glow at the sun's position -->
+  <circle cx="15" cy="10" r="8" fill="url(#lm-glow)"/>
+
+  <!-- Rising sun disc above the letter's matra hook -->
+  <circle cx="15" cy="10" r="3" fill="#FFFAF0"/>
+  <circle cx="15" cy="10" r="1" fill="#B91C3C"/>
+
+  <!-- The letter "बि" — the mark itself -->
+  <text x="24" y="39" text-anchor="middle"
+        font-family="'Noto Sans Devanagari','Mangal','Kohinoor Devanagari','Rozha One',system-ui,serif"
+        font-size="38" font-weight="700"
+        fill="#FFFAF0" letter-spacing="0">बि</text>
+</svg>

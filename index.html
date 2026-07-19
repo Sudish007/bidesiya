@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bidesiya</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="assets/css/style.css?v=26" />
+</head>
+<body>
+  <div class="app-shell">
+    <div id="shell"></div>
+
+    <main class="main-column">
+      <section class="center-column">
+        <div class="stories" id="stories">
+          <!-- Injected by feed.js -->
+        </div>
+
+        <div class="madhubani-divider-wrap" id="madhubani-divider"></div>
+
+        <div id="feed">
+          <div class="banner banner-info">Loading feed…</div>
+        </div>
+      </section>
+
+      <aside class="right-rail">
+        <div class="rail-user" id="rail-user"></div>
+
+        <div class="rail-heading">
+          <span class="title">Suggested for you</span>
+          <a class="link" href="#">See all</a>
+        </div>
+        <div id="suggestions"><div class="subtle">Loading…</div></div>
+
+        <div class="rail-heading" style="margin-top:24px">
+          <span class="title">Trending in Bihar</span>
+        </div>
+        <div id="trending"><div class="subtle">Loading…</div></div>
+
+        <div class="rail-heading" style="margin-top:24px">
+          <span class="title">Sahyog · सहयोग</span>
+          <a class="link" href="fund.html">All causes</a>
+        </div>
+        <div id="featured-campaign" hidden></div>
+
+        <div class="rail-heading" style="margin-top:24px">
+          <span class="title">This week in Bihar</span>
+          <a class="link" href="events.html">All events</a>
+        </div>
+        <div id="upcoming-events"><div class="subtle">Loading…</div></div>
+
+        <div id="panchang-card" class="panchang-card" hidden>
+          <div class="pc-inner">
+            <div class="pc-emoji">☀️</div>
+            <div class="pc-body">
+              <div class="pc-line1"><span id="pc-tithi"></span></div>
+              <div class="pc-line2"><span id="pc-nakshatra"></span></div>
+              <div class="pc-line3">
+                <span id="pc-vs">Vikram Samvat —</span> · <span id="pc-vaar"></span>vaar
+              </div>
+            </div>
+          </div>
+          <div class="pc-chhath" id="pc-chhath" hidden>
+            <span id="pc-chhath-days"></span> days to Chhath Sandhya Arghya
+          </div>
+        </div>
+
+        <div id="village-card" class="village-card" hidden>
+          <div class="vc-header">
+            <span class="vc-icon" id="vc-icon">🏘️</span>
+            <div>
+              <div class="vc-label">Ghar wali baat</div>
+              <div class="vc-village" id="vc-name">—</div>
+            </div>
+          </div>
+          <a class="btn btn-outline btn-block btn-small" id="vc-link" href="#">Open village channel</a>
+        </div>
+
+        <div class="rail-footer">
+          <a href="learn.html">Learn</a>
+          <a href="jobs.html">Jobs</a>
+          <a href="land.html">Land Guardian</a>
+          <a href="admin/login.html">Admin</a>
+          <br />
+          <span>© 2026 Bidesiya · Bhojpuri folk-song tradition of migrants</span>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <script type="module" src="assets/js/shell.js?v=26"></script>
+  <script type="module" src="assets/js/compose_modal.js?v=26"></script>
+  <script type="module" src="assets/js/feed.js?v=26"></script>
+</body>
+</html>

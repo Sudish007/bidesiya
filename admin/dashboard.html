@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin dashboard — Bidesiya</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap-wide row">
+      <a class="brand" href="../index.html">
+        <img src="../assets/img/logo-mark.svg" alt="" width="32" height="32" />
+        <span>Bidesiya · Admin</span>
+      </a>
+      <nav class="nav">
+        <a href="dashboard.html" class="active">Dashboard</a>
+        <a href="users.html">Users</a>
+        <a href="moderation.html">Moderation</a>
+        <a href="content.html">Content</a>
+      </nav>
+      <span class="right hstack" id="who">…</span>
+      <button class="btn btn-outline" id="btn-signout">Sign out</button>
+    </div>
+  </header>
+
+  <main class="wrap-wide" style="padding:16px 20px 40px">
+    <section class="hero">
+      <span class="kicker">Overview</span>
+      <h1>Platform health</h1>
+    </section>
+
+    <div class="grid-metrics" id="metrics"></div>
+
+    <hr />
+    <h2>Quick actions</h2>
+    <div class="hstack" style="flex-wrap: wrap; gap: 10px; margin-top: 12px">
+      <button class="btn btn-primary" id="btn-poll">Trigger land poll</button>
+      <a class="btn btn-outline" href="../admin.html">Advanced API console</a>
+      <a class="btn btn-outline" href="../index.html" target="_blank">Open public feed</a>
+    </div>
+    <pre id="poll-out" class="subtle" style="white-space:pre-wrap; margin-top:12px"></pre>
+  </main>
+
+  <script type="module" src="admin.js"></script>
+</body>
+</html>

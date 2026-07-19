@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Learn — Bidesiya</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <div id="shell"></div>
+    <main class="main-column" style="max-width: 800px; margin: 0 auto">
+      <section class="center-column" style="flex: 1 1 100%; max-width: 100%">
+        <div class="hero">
+          <span class="kicker">Skill up</span>
+          <h1>Learn on your terms</h1>
+          <p>Bite-sized lessons — 3 minutes each. English for real workplaces, civic sense that matters, digital safety, and women's rights.</p>
+        </div>
+        <div class="chips" id="tracks">
+          <button class="chip active" data-track="english">English (10)</button>
+          <button class="chip" data-track="civic">Civic sense (6)</button>
+          <button class="chip" data-track="digital">Digital literacy (5)</button>
+          <button class="chip" data-track="women_safety">Women's safety (4)</button>
+        </div>
+        <div id="lessons"><div class="banner banner-info">Sign in to load lessons.</div></div>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="assets/js/shell.js"></script>
+  <script type="module" src="assets/js/compose_modal.js"></script>
+  <script type="module">
+    import { mountShell } from './assets/js/shell.js';
+    mountShell('learn');
+  </script>
+  <script type="module" src="assets/js/learn.js"></script>
+</body>
+</html>

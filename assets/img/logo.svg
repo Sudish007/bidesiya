@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Bidesiya full logotype — "बि" mark + बिदेसिया wordmark + tagline.
+  Tagline: "अपने, कहीं भी — Apne, anywhere." The one Hindi word every Indian
+  understands emotionally that resists English translation. Pan-Indian by
+  language, Bihari by origin.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 60" role="img" aria-label="Bidesiya · Apne, anywhere">
+  <defs>
+    <linearGradient id="bd-bg" x1="0.15" y1="0.05" x2="0.85" y2="0.95">
+      <stop offset="0"    stop-color="#F43F5E"/>
+      <stop offset="0.55" stop-color="#F97316"/>
+      <stop offset="1"    stop-color="#FBBF24"/>
+    </linearGradient>
+    <linearGradient id="bd-text" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0"   stop-color="#F43F5E"/>
+      <stop offset="0.6" stop-color="#F97316"/>
+      <stop offset="1"   stop-color="#EA580C"/>
+    </linearGradient>
+    <radialGradient id="bd-glow" cx="0.32" cy="0.2" r="0.35">
+      <stop offset="0" stop-color="#FFF7ED" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#FFF7ED" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Mark on the left -->
+  <g transform="translate(6, 6)">
+    <rect width="48" height="48" rx="13" fill="url(#bd-bg)"/>
+    <circle cx="15" cy="10" r="8" fill="url(#bd-glow)"/>
+    <circle cx="15" cy="10" r="3" fill="#FFFAF0"/>
+    <circle cx="15" cy="10" r="1" fill="#B91C3C"/>
+    <text x="24" y="39" text-anchor="middle"
+          font-family="'Noto Sans Devanagari','Mangal','Kohinoor Devanagari','Rozha One',system-ui,serif"
+          font-size="38" font-weight="700"
+          fill="#FFFAF0">बि</text>
+  </g>
+
+  <!-- Devanagari wordmark — the app's name in its native script -->
+  <text x="66" y="30"
+        font-family="'Noto Sans Devanagari','Rozha One','Mangal','Kohinoor Devanagari',system-ui,serif"
+        font-size="26" font-weight="700"
+        fill="url(#bd-text)" letter-spacing="0.3">बिदेसिया</text>
+
+  <!-- Bilingual tagline: Devanagari primary, Latin transliteration underneath -->
+  <text x="66" y="47"
+        font-family="'Noto Sans Devanagari','Mangal',system-ui,sans-serif"
+        font-size="11" font-weight="600"
+        fill="#7C2D12" letter-spacing="0.2">अपने, कहीं भी</text>
+  <text x="128" y="47"
+        font-family="-apple-system,'Segoe UI',system-ui,sans-serif"
+        font-size="10" font-weight="500" font-style="italic"
+        fill="#8B6F7C" letter-spacing="0.3">· Apne, anywhere</text>
+</svg>

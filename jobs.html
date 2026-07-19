@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jobs — Bidesiya</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <div id="shell"></div>
+    <main class="main-column" style="max-width: 800px; margin: 0 auto">
+      <section class="center-column" style="flex: 1 1 100%; max-width: 100%">
+        <div class="hero">
+          <span class="kicker">Work</span>
+          <h1>Verified jobs — no upfront fees.</h1>
+          <p>Every listing is verified by our team. If anyone asks money to start work, that's a scam. Report it.</p>
+        </div>
+        <div class="chips" id="categories">
+          <button class="chip active" data-cat="">All</button>
+          <button class="chip" data-cat="construction">Construction</button>
+          <button class="chip" data-cat="factory">Factory</button>
+          <button class="chip" data-cat="delivery">Delivery</button>
+          <button class="chip" data-cat="security">Security</button>
+          <button class="chip" data-cat="driver">Driver</button>
+          <button class="chip" data-cat="cook">Cook/domestic</button>
+          <button class="chip" data-cat="other">Other</button>
+        </div>
+        <div id="jobs"><div class="banner banner-info">Sign in to load jobs.</div></div>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="assets/js/shell.js"></script>
+  <script type="module" src="assets/js/compose_modal.js"></script>
+  <script type="module">
+    import { mountShell } from './assets/js/shell.js';
+    mountShell('jobs');
+  </script>
+  <script type="module" src="assets/js/jobs.js"></script>
+</body>
+</html>

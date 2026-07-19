@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Bihari Aunty — default female avatar. Saree pallu over head, bindi, sindoor, braid. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Bihari aunty avatar">
+  <defs>
+    <linearGradient id="skinA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F4C29A"/>
+      <stop offset="1" stop-color="#DEA070"/>
+    </linearGradient>
+    <linearGradient id="sareeA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F43F5E"/>
+      <stop offset="0.5" stop-color="#F97316"/>
+      <stop offset="1" stop-color="#DC2626"/>
+    </linearGradient>
+    <linearGradient id="palluA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F97316"/>
+      <stop offset="1" stop-color="#DC2626"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Warm background -->
+  <circle cx="100" cy="100" r="100" fill="currentColor" opacity="0.15"/>
+  <circle cx="100" cy="100" r="96" fill="#FEF3EE"/>
+
+  <!-- Braid over right shoulder -->
+  <path d="M 128 132 Q 138 155 142 180 Q 143 195 138 200 L 128 200 Q 128 180 122 160 Q 118 145 118 135 Z" fill="#2A1810"/>
+  <!-- Braid weave suggestion -->
+  <path d="M 128 148 Q 133 154 132 158" stroke="#4A2818" stroke-width="1.2" fill="none"/>
+  <path d="M 132 168 Q 136 174 134 178" stroke="#4A2818" stroke-width="1.2" fill="none"/>
+  <path d="M 135 186 Q 138 192 136 196" stroke="#4A2818" stroke-width="1.2" fill="none"/>
+
+  <!-- Neck -->
+  <rect x="88" y="130" width="24" height="18" rx="4" fill="url(#skinA)"/>
+
+  <!-- Saree body over shoulders -->
+  <path d="M 40 200 Q 40 158 100 150 Q 160 158 160 200 Z" fill="url(#sareeA)"/>
+
+  <!-- Pallu (draped over head and down the left) -->
+  <path d="M 55 78 Q 50 60 100 45 Q 150 60 145 78 Q 145 90 138 92 Q 100 60 62 92 Q 55 90 55 78 Z" fill="url(#palluA)"/>
+  <!-- Pallu falling down left -->
+  <path d="M 62 92 Q 45 130 45 200 L 62 200 Q 62 148 78 118 Q 74 100 62 92 Z" fill="url(#palluA)"/>
+  <!-- Pallu border pattern -->
+  <path d="M 62 92 Q 100 62 138 92" stroke="#FBBF24" stroke-width="1.5" fill="none" opacity="0.8"/>
+  <path d="M 62 92 Q 100 66 138 92" stroke="#FDF6EC" stroke-width="0.8" fill="none" opacity="0.6"/>
+
+  <!-- Face -->
+  <ellipse cx="100" cy="102" rx="40" ry="44" fill="url(#skinA)"/>
+
+  <!-- Hair line (parting visible under pallu) -->
+  <path d="M 78 78 Q 100 66 122 78 Q 118 82 100 82 Q 82 82 78 78 Z" fill="#2A1810"/>
+  <!-- Sindoor (thin red line at part) -->
+  <path d="M 100 68 L 100 82" stroke="#DC2626" stroke-width="1.8" stroke-linecap="round"/>
+
+  <!-- Small maang tikka on forehead -->
+  <circle cx="100" cy="78" r="2.5" fill="#FBBF24"/>
+  <circle cx="100" cy="78" r="1.2" fill="#DC2626"/>
+
+  <!-- Ears -->
+  <ellipse cx="62" cy="104" rx="4" ry="7" fill="url(#skinA)"/>
+  <ellipse cx="138" cy="104" rx="4" ry="7" fill="url(#skinA)"/>
+  <!-- Earrings -->
+  <circle cx="62" cy="114" r="2.5" fill="#FBBF24"/>
+  <circle cx="138" cy="114" r="2.5" fill="#FBBF24"/>
+
+  <!-- Eyebrows -->
+  <path d="M 78 92 Q 84 88 92 92" stroke="#2A1810" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+  <path d="M 108 92 Q 116 88 122 92" stroke="#2A1810" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+
+  <!-- Eyes with lashes -->
+  <ellipse cx="85" cy="100" rx="3.5" ry="4" fill="#2A1810"/>
+  <ellipse cx="115" cy="100" rx="3.5" ry="4" fill="#2A1810"/>
+  <circle cx="86" cy="99" r="1.1" fill="#FFFFFF"/>
+  <circle cx="116" cy="99" r="1.1" fill="#FFFFFF"/>
+  <!-- Lashes hint -->
+  <path d="M 81 96 L 78 93" stroke="#2A1810" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M 119 96 L 122 93" stroke="#2A1810" stroke-width="1.2" stroke-linecap="round"/>
+
+  <!-- Bindi (large red dot on forehead) -->
+  <circle cx="100" cy="88" r="3.2" fill="#DC2626"/>
+
+  <!-- Nose -->
+  <path d="M 100 106 Q 96 118 100 124 Q 104 122 104 120" stroke="#B47850" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+  <!-- Nose stud -->
+  <circle cx="94" cy="118" r="1.4" fill="#FBBF24"/>
+
+  <!-- Lips (subtle smile) -->
+  <path d="M 90 136 Q 100 141 110 136 Q 100 144 90 136 Z" fill="#B23246"/>
+  <path d="M 90 136 Q 100 141 110 136" stroke="#8B1D34" stroke-width="0.8" fill="none"/>
+</svg>

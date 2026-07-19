@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Notifications · Bidesiya</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="assets/css/style.css?v=26" />
+</head>
+<body>
+  <div class="app-shell">
+    <div id="shell"></div>
+
+    <main class="main-column">
+      <section class="center-column">
+        <header class="inbox-header">
+          <h1 style="margin:0; font-size: 26px; font-weight: 800;">Notifications</h1>
+          <div style="display: flex; align-items: center; gap: 8px">
+            <div class="tab-strip">
+              <button class="tab active" data-filter="all">All</button>
+              <button class="tab" data-filter="unread">Unread</button>
+              <button class="tab" data-filter="mentions">Mentions</button>
+            </div>
+            <button class="btn btn-outline btn-small" id="btn-mark-read">Mark all read</button>
+          </div>
+        </header>
+
+        <div id="inbox-list">
+          <div class="banner banner-info">Loading…</div>
+        </div>
+      </section>
+
+      <aside class="right-rail">
+        <div class="rail-heading">
+          <span class="title">Tips</span>
+        </div>
+        <div class="card" style="padding: 14px; font-size: 13px; line-height: 1.5">
+          <p style="margin: 0 0 8px">Use <b>@username</b> in posts and comments to notify someone.</p>
+          <p style="margin: 0 0 8px">Follow a community to see its posts in your feed and here.</p>
+          <p style="margin: 0">DMs live in the <a href="dms.html">Messages</a> tab.</p>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <script type="module" src="assets/js/shell.js?v=26"></script>
+  <script type="module" src="assets/js/inbox.js?v=26"></script>
+</body>
+</html>

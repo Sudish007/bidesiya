@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Content — Bidesiya Admin</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap-wide row">
+      <a class="brand" href="../index.html">
+        <img src="../assets/img/logo-mark.svg" alt="" width="32" height="32" />
+        <span>Bidesiya · Admin</span>
+      </a>
+      <nav class="nav">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="users.html">Users</a>
+        <a href="moderation.html">Moderation</a>
+        <a href="content.html" class="active">Content</a>
+      </nav>
+      <span class="right hstack" id="who">…</span>
+      <button class="btn btn-outline" id="btn-signout">Sign out</button>
+    </div>
+  </header>
+
+  <main class="wrap-wide" style="padding:16px 20px 40px">
+    <section class="hero">
+      <span class="kicker">Editor</span>
+      <h1>Content management</h1>
+    </section>
+
+    <div class="card">
+      <h3>Add job listing</h3>
+      <div class="hstack" style="gap:10px; flex-wrap:wrap">
+        <input class="input grow" id="job-title" placeholder="Job title" />
+        <input class="input grow" id="job-employer" placeholder="Employer name" />
+        <select class="input" id="job-category">
+          <option value="construction">Construction</option>
+          <option value="factory">Factory</option>
+          <option value="delivery">Delivery</option>
+          <option value="security">Security</option>
+          <option value="driver">Driver</option>
+          <option value="cook">Cook / domestic</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="hstack" style="gap:10px; flex-wrap:wrap; margin-top: 10px">
+        <input class="input grow" id="job-city" placeholder="City" />
+        <input class="input grow" id="job-state" placeholder="State" />
+        <input class="input" id="job-wmin" type="number" placeholder="Min wage ₹/mo" style="max-width:160px" />
+        <input class="input" id="job-wmax" type="number" placeholder="Max wage ₹/mo" style="max-width:160px" />
+      </div>
+      <div class="hstack" style="gap:14px; margin-top: 10px">
+        <label class="subtle"><input type="checkbox" id="job-house" /> Housing</label>
+        <label class="subtle"><input type="checkbox" id="job-food" /> Food</label>
+        <input class="input grow" id="job-phone" placeholder="Apply via phone (optional)" />
+      </div>
+      <textarea class="input" id="job-desc" rows="3" placeholder="Description" style="margin-top:10px"></textarea>
+      <button class="btn btn-primary" id="btn-add-job" style="margin-top:10px">Publish job</button>
+    </div>
+
+    <div class="card">
+      <h3>Add Sarkari notification (job / result / admit card / scholarship / form)</h3>
+      <div class="hstack" style="gap:10px; flex-wrap:wrap">
+        <select class="input" id="n-kind" style="max-width:180px">
+          <option value="job">Job</option>
+          <option value="result">Result</option>
+          <option value="admit_card">Admit Card</option>
+          <option value="admission">Admission</option>
+          <option value="scholarship">Scholarship</option>
+          <option value="syllabus">Syllabus</option>
+          <option value="online_form">Online Form</option>
+          <option value="scheme">Sarkari Yojna</option>
+        </select>
+        <input class="input grow" id="n-title" placeholder="Title (English)" />
+      </div>
+      <div class="hstack" style="gap:10px; flex-wrap:wrap; margin-top:10px">
+        <input class="input grow" id="n-title-hi" placeholder="Title (Hindi) — optional" />
+        <input class="input" id="n-authority-short" placeholder="Short (e.g. BPSC)" style="max-width:180px" />
+      </div>
+      <input class="input" id="n-authority" placeholder="Full issuing authority" style="margin-top:10px" />
+      <textarea class="input" id="n-summary" rows="2" placeholder="1-2 line summary" style="margin-top:10px"></textarea>
+      <div class="hstack" style="gap:10px; flex-wrap:wrap; margin-top:10px">
+        <input class="input" id="n-vacancies" type="number" placeholder="Vacancies" style="max-width:150px" />
+        <input class="input" id="n-age-min" type="number" placeholder="Age min" style="max-width:110px" />
+        <input class="input" id="n-age-max" type="number" placeholder="Age max" style="max-width:110px" />
+        <input class="input" id="n-education" placeholder="Education (10th/12th/graduate)" style="max-width:220px" />
+        <select class="input" id="n-scope" style="max-width:160px">
+          <option value="bihar">Bihar</option>
+          <option value="india">India</option>
+        </select>
+      </div>
+      <div class="hstack" style="gap:10px; flex-wrap:wrap; margin-top:10px">
+        <div class="field grow"><label>Apply from</label><input class="input" id="n-apply-from" type="date" /></div>
+        <div class="field grow"><label>Apply by</label><input class="input" id="n-apply-by" type="date" /></div>
+        <div class="field grow"><label>Exam date</label><input class="input" id="n-exam-date" type="date" /></div>
+      </div>
+      <input class="input" id="n-official" placeholder="Official portal URL" style="margin-top:10px" />
+      <input class="input" id="n-apply-url" placeholder="Direct apply URL" style="margin-top:10px" />
+      <label class="subtle" style="display:block; margin-top:10px"><input type="checkbox" id="n-featured" /> Feature at the top</label>
+      <button class="btn btn-primary" id="btn-add-notification" style="margin-top:10px">Publish notification</button>
+    </div>
+
+    <div class="card">
+      <h3>Add lesson</h3>
+      <div class="hstack" style="gap:10px; flex-wrap:wrap">
+        <select class="input" id="l-track">
+          <option value="english">English</option>
+          <option value="civic">Civic sense</option>
+          <option value="digital">Digital literacy</option>
+          <option value="women_safety">Women's safety</option>
+        </select>
+        <input class="input" id="l-order" type="number" placeholder="Order" style="max-width:120px" value="99" />
+        <input class="input grow" id="l-title" placeholder="Title" />
+      </div>
+      <input class="input" id="l-subtitle" placeholder="Subtitle (optional)" style="margin-top:10px" />
+      <textarea class="input" id="l-body" rows="5" placeholder="Body — Markdown allowed" style="margin-top:10px"></textarea>
+      <button class="btn btn-primary" id="btn-add-lesson" style="margin-top:10px">Publish lesson</button>
+    </div>
+  </main>
+
+  <script type="module" src="admin.js"></script>
+</body>
+</html>

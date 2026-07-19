@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Jobs banner — construction worker with helmet, Delhi Metro pillar hint. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 180" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Jobs for Biharis">
+  <defs>
+    <linearGradient id="bgJb" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0"    stop-color="#DBEAFE"/>
+      <stop offset="1"    stop-color="#FEF3EE"/>
+    </linearGradient>
+    <linearGradient id="skinJ" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F1B78A"/>
+      <stop offset="1" stop-color="#D89460"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="180" fill="url(#bgJb)"/>
+
+  <!-- Metro pillar silhouette -->
+  <rect x="820" y="20" width="40" height="160" fill="#94A3B8" opacity="0.7"/>
+  <rect x="800" y="20" width="80" height="10" fill="#64748B"/>
+  <!-- Metro rail line -->
+  <rect x="820" y="180" width="80" height="6" fill="#334155"/>
+  <line x1="820" y1="20" x2="800" y2="180" stroke="#64748B" stroke-width="2" opacity="0.5"/>
+
+  <!-- Construction worker (right of centre) -->
+  <g transform="translate(500 60)">
+    <!-- Body -->
+    <path d="M -35 40 Q -35 15 0 12 Q 35 15 35 40 L 32 100 L -32 100 Z" fill="#EA580C"/>
+    <!-- Reflective strip -->
+    <rect x="-35" y="55" width="70" height="4" fill="#FBBF24"/>
+    <rect x="-35" y="70" width="70" height="4" fill="#FBBF24"/>
+    <!-- Head -->
+    <circle cx="0" cy="0" r="24" fill="url(#skinJ)"/>
+    <!-- Hard hat -->
+    <path d="M -28 -3 Q -28 -22 0 -25 Q 28 -22 28 -3 Z" fill="#FBBF24"/>
+    <path d="M -30 -3 L 30 -3 L 30 2 L -30 2 Z" fill="#B45309"/>
+    <!-- Hat ridge -->
+    <path d="M -28 -3 Q 0 -18 28 -3" stroke="#B45309" stroke-width="1.5" fill="none"/>
+    <!-- Eyes -->
+    <circle cx="-7" cy="6" r="2" fill="#2A1810"/>
+    <circle cx="7" cy="6" r="2" fill="#2A1810"/>
+    <!-- Moustache -->
+    <path d="M -8 15 Q -3 12 0 15 Q 3 12 8 15" stroke="#2A1810" stroke-width="2" fill="none"/>
+    <!-- Smile -->
+    <path d="M -6 20 Q 0 24 6 20" stroke="#8B3A2A" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+    <!-- Arm holding hammer -->
+    <path d="M 32 40 L 55 60 L 60 75 L 40 60 Z" fill="url(#skinJ)"/>
+    <rect x="55" y="55" width="10" height="30" fill="#8B4513" transform="rotate(30 60 70)"/>
+    <rect x="52" y="48" width="20" height="10" fill="#64748B" transform="rotate(30 62 53)"/>
+
+    <!-- Left arm -->
+    <path d="M -32 40 L -55 55 L -50 68 L -30 60 Z" fill="url(#skinJ)"/>
+  </g>
+
+  <!-- Rebar / iron rods on the ground -->
+  <line x1="380" y1="170" x2="430" y2="170" stroke="#94A3B8" stroke-width="4"/>
+  <line x1="380" y1="175" x2="430" y2="175" stroke="#64748B" stroke-width="3"/>
+
+  <!-- Text -->
+  <text x="60" y="82" font-family="'Georgia', serif" font-size="42" font-weight="800" fill="#8B1D34">Jobs</text>
+  <text x="60" y="115" font-family="Arial, sans-serif" font-size="16" fill="#8B3A2A" opacity="0.9">Real jobs. Verified employers.</text>
+  <text x="60" y="140" font-family="Arial, sans-serif" font-size="12" fill="#B45309" opacity="0.85">Delhi · Mumbai · Bangalore · Chennai · Surat · Gulf — for Biharis, by Biharis</text>
+</svg>

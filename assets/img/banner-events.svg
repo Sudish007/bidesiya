@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Events banner — Chhath ghat scene, woman offering arghya to rising sun over water. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 180" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Events — Chhath, Sonepur, cultural events">
+  <defs>
+    <linearGradient id="skyEv" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0"    stop-color="#F97316"/>
+      <stop offset="0.4"  stop-color="#FBBF24"/>
+      <stop offset="1"    stop-color="#FEF3EE"/>
+    </linearGradient>
+    <linearGradient id="waterEv" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F97316" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#B45309" stop-opacity="0.6"/>
+    </linearGradient>
+    <radialGradient id="sunEv" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FDF6EC"/>
+      <stop offset="0.4" stop-color="#FBBF24"/>
+      <stop offset="1" stop-color="#F97316"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="900" height="180" fill="url(#skyEv)"/>
+
+  <!-- Sun (large, low on horizon) -->
+  <circle cx="700" cy="105" r="55" fill="url(#sunEv)"/>
+  <circle cx="700" cy="105" r="55" fill="none" stroke="#FBBF24" stroke-width="0.5" opacity="0.7"/>
+
+  <!-- Sun reflection on water (vertical band of light) -->
+  <path d="M 685 105 L 715 105 L 730 180 L 670 180 Z" fill="#FBBF24" opacity="0.35"/>
+
+  <!-- Water horizon -->
+  <rect x="0" y="105" width="900" height="75" fill="url(#waterEv)"/>
+
+  <!-- Water ripples -->
+  <path d="M 500 130 Q 550 128 600 130" stroke="#FDF6EC" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <path d="M 550 140 Q 620 138 690 140" stroke="#FDF6EC" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <path d="M 600 150 Q 680 148 760 150" stroke="#FDF6EC" stroke-width="1.5" fill="none" opacity="0.5"/>
+
+  <!-- Ghat steps (right side, receding into water) -->
+  <path d="M 550 180 L 550 155 L 700 155 L 700 180 Z" fill="#B45309" opacity="0.6"/>
+
+  <!-- Woman offering arghya (silhouette in saree, standing waist-deep in water) -->
+  <g transform="translate(485 105)">
+    <!-- Sindoor sky glow behind her -->
+    <circle cx="0" cy="-5" r="4" fill="#DC2626" opacity="0.6"/>
+    <!-- Saree bottom (in water) -->
+    <path d="M -15 20 Q -22 50 -25 75 L 25 75 Q 22 50 15 20 Z" fill="#DC2626" opacity="0.9"/>
+    <!-- Torso -->
+    <path d="M -14 20 Q -14 10 0 5 Q 14 10 14 20 Z" fill="#DC2626"/>
+    <!-- Head -->
+    <circle cx="0" cy="-4" r="8" fill="#D89460"/>
+    <!-- Hair (pallu over head) -->
+    <path d="M -10 -8 Q -12 -14 0 -14 Q 12 -14 10 -8 Q 10 -2 5 -2 Q 0 -8 -5 -2 Q -10 -2 -10 -8 Z" fill="#DC2626"/>
+    <!-- Arms raised, holding thali (sup) with fruits -->
+    <path d="M -14 15 L -22 -5 L -18 -8 L -8 12 Z" fill="#DC2626"/>
+    <path d="M 14 15 L 22 -5 L 18 -8 L 8 12 Z" fill="#DC2626"/>
+    <!-- Sup (traditional bamboo winnowing tray) -->
+    <ellipse cx="0" cy="-10" rx="26" ry="6" fill="#B45309"/>
+    <ellipse cx="0" cy="-11" rx="24" ry="4" fill="#8B4513" opacity="0.6"/>
+    <!-- Diya on sup -->
+    <circle cx="-8" cy="-14" r="2.5" fill="#FBBF24"/>
+    <path d="M -8 -18 Q -10 -22 -8 -24 Q -6 -22 -8 -18 Z" fill="#F97316"/>
+    <circle cx="8" cy="-14" r="2.5" fill="#FBBF24"/>
+    <path d="M 8 -18 Q 6 -22 8 -24 Q 10 -22 8 -18 Z" fill="#F97316"/>
+    <!-- Fruits -->
+    <circle cx="0" cy="-14" r="3.5" fill="#F97316"/>
+  </g>
+
+  <!-- A few more distant devotee silhouettes on the ghat -->
+  <g fill="#8B1D34" opacity="0.7">
+    <ellipse cx="600" cy="160" rx="6" ry="14"/>
+    <circle cx="600" cy="145" r="4"/>
+    <ellipse cx="625" cy="162" rx="5" ry="12"/>
+    <circle cx="625" cy="148" r="3.5"/>
+    <ellipse cx="655" cy="163" rx="5" ry="12"/>
+    <circle cx="655" cy="149" r="3.5"/>
+  </g>
+
+  <!-- Diyas floating on water (foreground) -->
+  <g>
+    <ellipse cx="180" cy="150" rx="10" ry="3" fill="#B45309"/>
+    <circle cx="180" cy="148" r="2" fill="#FBBF24"/>
+    <path d="M 180 145 Q 178 141 180 138 Q 182 141 180 145 Z" fill="#F97316"/>
+  </g>
+  <g>
+    <ellipse cx="250" cy="165" rx="8" ry="2.5" fill="#B45309"/>
+    <circle cx="250" cy="163" r="1.6" fill="#FBBF24"/>
+    <path d="M 250 161 Q 249 158 250 155 Q 251 158 250 161 Z" fill="#F97316"/>
+  </g>
+  <g>
+    <ellipse cx="330" cy="155" rx="9" ry="3" fill="#B45309"/>
+    <circle cx="330" cy="153" r="2" fill="#FBBF24"/>
+    <path d="M 330 150 Q 328 146 330 143 Q 332 146 330 150 Z" fill="#F97316"/>
+  </g>
+
+  <!-- Text -->
+  <text x="60" y="65" font-family="'Georgia', serif" font-size="36" font-weight="800" fill="#FDF6EC" stroke="#8B1D34" stroke-width="0.5">Events</text>
+  <text x="60" y="90" font-family="Arial, sans-serif" font-size="13" fill="#8B1D34" font-weight="600">Chhath · Sonepur mela · Bhikhari Thakur nataks</text>
+  <text x="60" y="110" font-family="Arial, sans-serif" font-size="11" fill="#8B3A2A" opacity="0.85">Every festival, every mela — RSVP with your community</text>
+</svg>

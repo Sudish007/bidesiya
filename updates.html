@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Updates — Bidesiya</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <div id="shell"></div>
+
+    <main class="main-column" style="max-width: 900px; margin: 0 auto">
+      <section class="center-column" style="flex: 1 1 100%; max-width: 100%">
+        <div class="hero">
+          <span class="kicker">Sarkari updates</span>
+          <h1>Every Bihar exam. Every scheme. One place.</h1>
+          <p>Job notifications, results, admit cards, admissions, scholarships, syllabus, government forms — all in one feed. Verified from official portals only.</p>
+        </div>
+
+        <div class="hstack" style="gap: 10px; margin: 14px 0 18px">
+          <input class="input grow" id="search" placeholder="Search — BPSC, SSC, scholarship, admit card…" />
+        </div>
+
+        <div class="tiles" id="tiles"></div>
+
+        <div class="section-title">
+          <h2 style="font-size: 20px; margin: 24px 0 12px; letter-spacing: -0.3px">Latest</h2>
+          <div class="chips" id="filter-chips">
+            <button class="chip active" data-kind="">All</button>
+            <button class="chip" data-kind="job">Jobs</button>
+            <button class="chip" data-kind="result">Results</button>
+            <button class="chip" data-kind="admit_card">Admit Card</button>
+            <button class="chip" data-kind="admission">Admission</button>
+            <button class="chip" data-kind="scholarship">Scholarship</button>
+            <button class="chip" data-kind="syllabus">Syllabus</button>
+            <button class="chip" data-kind="online_form">Forms</button>
+          </div>
+        </div>
+
+        <div id="list"><div class="banner banner-info">Sign in to load updates.</div></div>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="assets/js/shell.js"></script>
+  <script type="module" src="assets/js/compose_modal.js"></script>
+  <script type="module">
+    import { mountShell } from './assets/js/shell.js';
+    mountShell('updates');
+  </script>
+  <script type="module" src="assets/js/updates.js"></script>
+</body>
+</html>

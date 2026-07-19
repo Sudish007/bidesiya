@@ -1,0 +1,75 @@
+/* Admin-specific extensions over the main design tokens. */
+
+.grid-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.metric {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px;
+}
+.metric .label {
+  color: var(--ink-muted);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.metric .value {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--ink);
+  letter-spacing: -0.5px;
+  margin-top: 4px;
+}
+.metric .sub {
+  color: var(--ink-muted);
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+/* Table */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.admin-table th, .admin-table td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--divider);
+  vertical-align: middle;
+}
+.admin-table th {
+  background: var(--surface-alt);
+  color: var(--ink-muted);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+}
+.admin-table tbody tr:hover { background: var(--surface-alt); }
+
+.badge-role {
+  display: inline-block; padding: 2px 8px; border-radius: 20px;
+  font-size: 11px; font-weight: 800; letter-spacing: 0.3px;
+}
+.badge-role-admin { background: rgba(107,46,94,0.14); color: var(--plum); }
+.badge-role-moderator { background: rgba(49,130,206,0.14); color: var(--info); }
+.badge-role-user { background: var(--surface-alt); color: var(--ink-muted); }
+
+.badge-status {
+  display: inline-block; padding: 2px 8px; border-radius: 20px;
+  font-size: 11px; font-weight: 700;
+}
+.badge-status.active { background: rgba(47,133,90,0.14); color: var(--success); }
+.badge-status.banned { background: rgba(197,48,48,0.14); color: var(--danger); }
+.badge-status.verified { background: rgba(233,169,58,0.18); color: #B36B0F; }
+
+.row-actions { display: flex; gap: 4px; flex-wrap: wrap; }
+.row-actions .btn { padding: 5px 10px; font-size: 12px; }

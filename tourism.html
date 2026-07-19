@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tourism · Bidesiya</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="assets/css/style.css?v=26" />
+</head>
+<body>
+  <div class="app-shell">
+    <div id="shell"></div>
+
+    <main class="main-column">
+      <section class="center-column">
+        <div class="section-banner"><img src="assets/img/banner-tourism.svg?v=26" alt="Bihar and Jharkhand tourism" /></div>
+        <header class="communities-header">
+          <div>
+            <h1 style="margin:0; font-size: 26px; font-weight: 800">Tourism</h1>
+            <p class="subtle" style="margin: 4px 0 0">Curated destinations of Bihar &amp; Jharkhand.</p>
+          </div>
+        </header>
+
+        <div class="state-tabs">
+          <a href="tourism.html?state=bihar" class="state-tab" data-state="bihar">
+            <span class="st-flag">🪷</span>
+            <div>
+              <div class="st-name">Bihar</div>
+              <div class="st-sub" id="st-bihar-count">…</div>
+            </div>
+          </a>
+          <a href="tourism.html?state=jharkhand" class="state-tab" data-state="jharkhand">
+            <span class="st-flag">🌳</span>
+            <div>
+              <div class="st-name">Jharkhand</div>
+              <div class="st-sub" id="st-jharkhand-count">…</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="community-tabs" id="cat-tabs">
+          <button class="tab active" data-cat="">All</button>
+          <button class="tab" data-cat="pilgrimage">Pilgrimage</button>
+          <button class="tab" data-cat="heritage">Heritage</button>
+          <button class="tab" data-cat="wildlife">Wildlife</button>
+          <button class="tab" data-cat="waterfall">Waterfalls</button>
+          <button class="tab" data-cat="hill">Hills</button>
+          <button class="tab" data-cat="fort">Forts</button>
+          <button class="tab" data-cat="nature">Nature</button>
+          <button class="tab" data-cat="mela">Melas</button>
+          <button class="tab" data-cat="museum">Museums</button>
+        </div>
+
+        <div id="dest-grid" class="dest-grid">
+          <div class="banner banner-info">Loading…</div>
+        </div>
+      </section>
+
+      <aside class="right-rail">
+        <div class="rail-heading"><span class="title">Featured</span></div>
+        <div id="featured-list"><div class="subtle">…</div></div>
+
+        <div class="rail-footer" style="margin-top: 24px">
+          <a href="index.html">Home</a>
+          <a href="communities.html">Communities</a>
+          <a href="events.html">Events</a>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <script type="module" src="assets/js/shell.js?v=26"></script>
+  <script type="module" src="assets/js/tourism.js?v=26"></script>
+</body>
+</html>

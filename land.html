@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Land Guardian — Bidesiya</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <div id="shell"></div>
+    <main class="main-column" style="max-width: 800px; margin: 0 auto">
+      <section class="center-column" style="flex: 1 1 100%; max-width: 100%">
+        <div class="hero">
+          <span class="kicker">Flagship</span>
+          <h1>Land Record Guardian</h1>
+          <p>We poll Bihar's Bhu-Abhilekh, Parimarjan, and LRC portals hourly and alert you the moment there's a mutation request, dispute, or holder change on your registered land.</p>
+        </div>
+
+        <div id="parcels-section" class="card">
+          <h3>Watched parcels</h3>
+          <div id="parcels"><div class="banner banner-info">Loading…</div></div>
+          <hr />
+          <h3>Add a new parcel</h3>
+          <div class="field"><label>District</label><input class="input" id="p-district" placeholder="e.g. Siwan" /></div>
+          <div class="field"><label>Block (Anchal)</label><input class="input" id="p-block" placeholder="e.g. Maharajganj" /></div>
+          <div class="field"><label>Village</label><input class="input" id="p-village" placeholder="e.g. Baikunthpur" /></div>
+          <div class="hstack">
+            <div class="field grow"><label>Khata</label><input class="input" id="p-khata" placeholder="104" /></div>
+            <div class="field grow"><label>Khesra</label><input class="input" id="p-khesra" placeholder="287" /></div>
+          </div>
+          <div class="field"><label>Area (decimals, optional)</label><input class="input" id="p-area" type="number" step="0.1" placeholder="45.5" /></div>
+          <div class="field"><label>Current holder (optional)</label><input class="input" id="p-holder" placeholder="Late Bhola Yadav & heirs" /></div>
+          <button class="btn btn-primary" id="btn-add">Start watching</button>
+        </div>
+
+        <div class="card">
+          <h3>Alerts</h3>
+          <div id="alerts"><div class="banner banner-info">Loading…</div></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="assets/js/shell.js"></script>
+  <script type="module" src="assets/js/compose_modal.js"></script>
+  <script type="module">
+    import { mountShell } from './assets/js/shell.js';
+    mountShell('land');
+  </script>
+  <script type="module" src="assets/js/land.js"></script>
+</body>
+</html>
