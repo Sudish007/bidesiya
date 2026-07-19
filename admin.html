@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin — Bidesiya</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap row">
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo-mark.svg" alt="" width="32" height="32" />
+        <span>Bidesiya</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Feed</a>
+        <a href="land.html">Land Guardian</a>
+        <a href="admin.html" class="active">Admin</a>
+        <a href="auth.html">Sign in</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <span class="kicker">Dev tools</span>
+      <h1>Backend verification</h1>
+      <p>Point the frontend at your local backend and exercise every endpoint. Use this to smoke-test the API while iterating.</p>
+    </section>
+
+    <div class="card">
+      <h3>API base URL</h3>
+      <div class="hstack">
+        <input class="input grow" id="api-base" placeholder="http://localhost:8000" />
+        <button class="btn btn-primary" id="btn-save-base">Save</button>
+      </div>
+      <p class="subtle" style="margin-top:8px">Kept in <code>localStorage</code>. Point this at your live Uvicorn / Docker instance.</p>
+    </div>
+
+    <div class="card">
+      <h3>Health</h3>
+      <p class="subtle" style="margin-top:-4px">Pings <code>GET /health</code>.</p>
+      <button class="btn btn-outline" id="btn-health">Ping health</button>
+      <pre id="health-out" class="subtle" style="white-space:pre-wrap;margin-top:12px"></pre>
+    </div>
+
+    <div class="card">
+      <h3>Trigger Bhu-Abhilekh poller</h3>
+      <p class="subtle" style="margin-top:-4px">Runs one poll cycle immediately across all watched parcels. Requires auth.</p>
+      <button class="btn btn-primary" id="btn-poll">Poll now</button>
+      <pre id="poll-out" class="subtle" style="white-space:pre-wrap;margin-top:12px"></pre>
+    </div>
+
+    <div class="card">
+      <h3>Current session</h3>
+      <p id="who" class="subtle">…</p>
+      <button class="btn btn-outline" id="btn-me">Refresh /users/me</button>
+      <pre id="me-out" class="subtle" style="white-space:pre-wrap;margin-top:12px"></pre>
+    </div>
+  </main>
+
+  <script type="module" src="assets/js/admin.js"></script>
+</body>
+</html>

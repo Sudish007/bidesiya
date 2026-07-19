@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sahyog banner — joined hands cradling a heart-diya + rising sun. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 180" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Sahyog — Bihar community giving">
+  <defs>
+    <linearGradient id="bgSy" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0"   stop-color="#FEF3EE"/>
+      <stop offset="1"   stop-color="#FFE4E6"/>
+    </linearGradient>
+    <linearGradient id="sunSy" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FBBF24"/>
+      <stop offset="1" stop-color="#F97316"/>
+    </linearGradient>
+    <linearGradient id="handSy" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F1B78A"/>
+      <stop offset="1" stop-color="#D89460"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="180" fill="url(#bgSy)"/>
+
+  <!-- Sun -->
+  <circle cx="740" cy="80" r="46" fill="url(#sunSy)" opacity="0.9"/>
+  <g stroke="#F97316" stroke-width="2.5" opacity="0.6">
+    <line x1="740" y1="14" x2="740" y2="30"/>
+    <line x1="740" y1="130" x2="740" y2="146"/>
+    <line x1="674" y1="80" x2="690" y2="80"/>
+    <line x1="790" y1="80" x2="806" y2="80"/>
+    <line x1="694" y1="34" x2="705" y2="45"/>
+    <line x1="775" y1="115" x2="786" y2="126"/>
+    <line x1="786" y1="34" x2="775" y2="45"/>
+    <line x1="705" y1="115" x2="694" y2="126"/>
+  </g>
+
+  <!-- Small birds -->
+  <path d="M 780 40 Q 786 34 792 40 Q 798 34 804 40" stroke="#8B3A2A" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <path d="M 810 28 Q 815 24 820 28 Q 825 24 830 28" stroke="#8B3A2A" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Ground line -->
+  <path d="M 0 145 Q 450 138 900 145 L 900 180 L 0 180 Z" fill="#F97316" opacity="0.12"/>
+
+  <!-- Joined hands (silhouettes) — left palm -->
+  <path d="M 280 130
+           C 280 100, 300 90,  325 90
+           C 340 90,  348 96,  355 102
+           L 360 130 Z" fill="url(#handSy)" stroke="#B47850" stroke-width="1.5"/>
+  <!-- Right palm -->
+  <path d="M 440 130
+           C 440 100, 420 90,  395 90
+           C 380 90,  372 96,  365 102
+           L 360 130 Z" fill="url(#handSy)" stroke="#B47850" stroke-width="1.5"/>
+  <!-- Wrist / arm hint -->
+  <path d="M 275 130 L 265 175 L 300 175 L 305 130 Z" fill="#DC2626" opacity="0.85"/>
+  <path d="M 445 130 L 455 175 L 420 175 L 415 130 Z" fill="#F97316" opacity="0.85"/>
+
+  <!-- Heart-diya cradled -->
+  <g transform="translate(360 88)">
+    <path d="M 0 20
+             C -22 0,  -22 -20,  0 -10
+             C 22 -20,  22 0,   0 20 Z" fill="#F43F5E" stroke="#8B1D34" stroke-width="1.5"/>
+    <!-- Diya flame on top -->
+    <path d="M 0 -14 Q -3 -22 0 -30 Q 3 -22 0 -14 Z" fill="#FBBF24" stroke="#F97316" stroke-width="1"/>
+    <circle cx="0" cy="-24" r="2" fill="#FDF6EC"/>
+  </g>
+
+  <!-- Text -->
+  <text x="70" y="82" font-family="'Georgia', serif" font-size="42" font-weight="800" fill="#8B1D34">Sahyog</text>
+  <text x="70" y="115" font-family="Arial, sans-serif" font-size="18" fill="#8B3A2A" opacity="0.85">मिलकर बदलें बिहार</text>
+  <text x="70" y="140" font-family="Arial, sans-serif" font-size="13" fill="#B45309" opacity="0.85">Let's change Bihar together — one campaign at a time</text>
+</svg>

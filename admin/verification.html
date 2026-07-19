@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Verification queue — Bidesiya Admin</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap-wide row">
+      <a class="brand" href="../index.html">
+        <img src="../assets/img/logo-mark.svg" alt="" width="32" height="32" />
+        <span>Bidesiya · Admin</span>
+      </a>
+      <nav class="nav">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="users.html">Users</a>
+        <a href="moderation.html">Moderation</a>
+        <a href="verification.html" class="active">Verification</a>
+        <a href="content.html">Content</a>
+      </nav>
+      <span class="right hstack" id="who">…</span>
+      <button class="btn btn-outline" id="btn-signout">Sign out</button>
+    </div>
+  </header>
+
+  <main class="wrap-wide" style="padding:16px 20px 40px">
+    <section class="hero">
+      <span class="kicker">Trust</span>
+      <h1>Verification queue</h1>
+      <p>Users requesting a verified tier (community / institution / team). Approve or reject with a reviewer note.</p>
+    </section>
+
+    <div class="hstack" style="gap:8px;margin-bottom:12px">
+      <button class="chip active" data-status="pending">Pending</button>
+      <button class="chip" data-status="approved">Approved</button>
+      <button class="chip" data-status="rejected">Rejected</button>
+    </div>
+
+    <div id="queue"><div class="subtle">Loading…</div></div>
+  </main>
+
+  <script type="module" src="verification.js"></script>
+</body>
+</html>

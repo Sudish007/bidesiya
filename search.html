@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Search · Bidesiya</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="assets/css/style.css?v=26" />
+</head>
+<body>
+  <div class="app-shell">
+    <div id="shell"></div>
+
+    <main class="main-column">
+      <section class="center-column">
+        <div class="search-page-input">
+          <input type="search" id="q" class="input" placeholder="Search users, posts, communities, #hashtags…" autofocus />
+        </div>
+
+        <div class="tab-strip search-tabs">
+          <button class="tab active" data-tab="all">All</button>
+          <button class="tab" data-tab="users">People</button>
+          <button class="tab" data-tab="communities">Communities</button>
+          <button class="tab" data-tab="posts">Posts</button>
+          <button class="tab" data-tab="hashtags">Hashtags</button>
+        </div>
+
+        <div id="search-results">
+          <div class="subtle" style="padding: 40px; text-align: center">Type something above.</div>
+        </div>
+      </section>
+
+      <aside class="right-rail">
+        <div class="rail-heading">
+          <span class="title">Search tips</span>
+        </div>
+        <div class="card" style="padding: 14px; font-size: 13px; line-height: 1.5">
+          <p style="margin: 0 0 6px"><b>#hashtag</b> — jumps to trending pages</p>
+          <p style="margin: 0 0 6px"><b>@username</b> — jumps to profiles</p>
+          <p style="margin: 0">Or search freely across everything at once.</p>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <script type="module" src="assets/js/shell.js?v=26"></script>
+  <script type="module" src="assets/js/search.js?v=26"></script>
+</body>
+</html>

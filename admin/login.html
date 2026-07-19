@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin login — Bidesiya</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap row">
+      <a class="brand" href="../index.html">
+        <img src="../assets/img/logo-mark.svg" alt="" width="32" height="32" />
+        <span>Bidesiya · Admin</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="wrap" style="max-width: 440px">
+    <section class="hero">
+      <span class="kicker">Staff access</span>
+      <h1>Admin sign in</h1>
+      <p>Username &amp; password. Regular users use phone OTP at the main site.</p>
+    </section>
+
+    <div class="card">
+      <div class="field"><label>Username</label>
+        <input class="input" id="username" autocomplete="username" placeholder="admin" />
+      </div>
+      <div class="field"><label>Password</label>
+        <input class="input" id="password" type="password" autocomplete="current-password" />
+      </div>
+      <button class="btn btn-primary" id="btn-signin" style="width:100%">Sign in</button>
+      <div id="err" class="banner banner-error" hidden></div>
+    </div>
+
+    <div class="card">
+      <h3>Dev credentials</h3>
+      <p class="subtle">For local testing only. Change on any real deployment.</p>
+      <ul class="subtle">
+        <li>Username: <code>admin</code></li>
+        <li>Password: <code>Bidesiya@2026</code></li>
+      </ul>
+    </div>
+  </main>
+
+  <script type="module" src="admin.js"></script>
+</body>
+</html>

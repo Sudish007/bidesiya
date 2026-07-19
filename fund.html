@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sahyog · Bidesiya</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="assets/css/style.css?v=26" />
+</head>
+<body>
+  <div class="app-shell">
+    <div id="shell"></div>
+
+    <main class="main-column">
+      <section class="center-column">
+        <div class="section-banner"><img src="assets/img/banner-sahyog.svg?v=26" alt="Sahyog crowdfunding for Bihar" /></div>
+        <header class="communities-header">
+          <div>
+            <h1 style="margin:0; font-size: 26px; font-weight: 800">Sahyog · सहयोग</h1>
+            <p class="subtle" style="margin: 4px 0 0">मिलकर बदलें बिहार · Let's change Bihar together.</p>
+          </div>
+          <button class="btn btn-primary" id="btn-start">+ Start a campaign</button>
+        </header>
+
+        <div class="sahyog-cats" id="cat-tabs">
+          <button class="scat active" data-cat=""><span>🤝</span>All</button>
+          <button class="scat" data-cat="village-infra"><span>🚰</span>Village infra</button>
+          <button class="scat" data-cat="education"><span>📚</span>Education</button>
+          <button class="scat" data-cat="medical"><span>🏥</span>Medical</button>
+          <button class="scat" data-cat="cultural"><span>🎭</span>Culture</button>
+          <button class="scat" data-cat="disaster"><span>🌊</span>Disaster</button>
+          <button class="scat" data-cat="livelihood"><span>💼</span>Livelihood</button>
+          <button class="scat" data-cat="sports"><span>🏏</span>Sports</button>
+          <button class="scat" data-cat="environment"><span>🌳</span>Environment</button>
+          <button class="scat" data-cat="community"><span>🤝</span>Community</button>
+          <button class="scat" data-cat="other"><span>📦</span>Other</button>
+        </div>
+
+        <div class="sahyog-filters" style="display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap">
+          <input class="input" id="f-search" placeholder="Search campaigns…" style="flex: 1; min-width: 180px" />
+          <input class="input" id="f-district" placeholder="District" style="max-width: 180px" />
+          <select class="input" id="f-sort" style="max-width: 180px">
+            <option value="urgent">Most urgent</option>
+            <option value="almost-there">Almost there</option>
+            <option value="recent">Newest</option>
+            <option value="trending">Trending</option>
+          </select>
+        </div>
+
+        <div id="campaigns-grid" class="campaigns-grid">
+          <div class="subtle" style="grid-column: 1/-1">Loading…</div>
+        </div>
+      </section>
+
+      <aside class="right-rail">
+        <div class="rail-heading">
+          <span class="title">Your campaigns</span>
+        </div>
+        <div id="my-campaigns-mini"><div class="subtle">…</div></div>
+
+        <div class="rail-heading" style="margin-top: 24px">
+          <span class="title">How Sahyog works</span>
+        </div>
+        <div class="card" style="padding: 14px; font-size: 13px; line-height: 1.55">
+          <p style="margin: 0 0 8px"><b>1.</b> Organizer creates a campaign with their UPI ID.</p>
+          <p style="margin: 0 0 8px"><b>2.</b> Admin approves after checking basics.</p>
+          <p style="margin: 0 0 8px"><b>3.</b> You pledge, then pay directly via UPI to the organizer.</p>
+          <p style="margin: 0 0 8px"><b>4.</b> Organizer confirms receipt · raised total updates.</p>
+          <p style="margin: 0"><b>5.</b> Milestone updates with photo proofs keep everyone honest.</p>
+        </div>
+
+        <div class="rail-heading" style="margin-top: 24px">
+          <span class="title">Money & trust</span>
+        </div>
+        <div class="card" style="padding: 14px; font-size: 12.5px; line-height: 1.55">
+          <p style="margin: 0"><b>Bidesiya never holds your money.</b> Every rupee goes UPI → organizer directly. Report any campaign that feels off — we act within 24 hours.</p>
+        </div>
+
+        <div class="rail-footer" style="margin-top: 24px">
+          <a href="index.html">Home</a>
+          <a href="communities.html">Communities</a>
+          <a href="events.html">Events</a>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <script type="module" src="assets/js/shell.js?v=26"></script>
+  <script type="module" src="assets/js/fund.js?v=26"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Communities · Bidesiya</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="assets/css/style.css?v=26" />
+</head>
+<body>
+  <div class="app-shell">
+    <div id="shell"></div>
+
+    <main class="main-column">
+      <section class="center-column">
+        <div class="section-banner"><img src="assets/img/banner-communities.svg?v=26" alt="Bihar village communities" /></div>
+        <header class="communities-header">
+          <div>
+            <h1 style="margin:0; font-size: 26px; font-weight: 800;">Communities</h1>
+            <p class="subtle" style="margin: 4px 0 0">Bihar-first spaces built by and for the state.</p>
+          </div>
+          <button class="btn btn-primary" id="btn-new-community">+ New</button>
+        </header>
+
+        <div class="community-tabs" id="community-tabs">
+          <button class="tab active" data-cat="">All</button>
+          <button class="tab" data-cat="joined">Joined</button>
+          <button class="tab" data-cat="jobs">Jobs</button>
+          <button class="tab" data-cat="governance">Governance</button>
+          <button class="tab" data-cat="culture">Culture</button>
+          <button class="tab" data-cat="skills">Skills</button>
+          <button class="tab" data-cat="migration">Migration</button>
+          <button class="tab" data-cat="women">Women</button>
+          <button class="tab" data-cat="tech">Tech</button>
+        </div>
+
+        <input type="search" class="input" id="community-search" placeholder="Search communities by name…" style="margin-bottom: 16px" />
+
+        <div id="communities-grid" class="communities-grid">
+          <div class="banner banner-info">Loading communities…</div>
+        </div>
+      </section>
+
+      <aside class="right-rail">
+        <div class="rail-heading">
+          <span class="title">Why communities?</span>
+        </div>
+        <div class="card" style="padding: 14px; font-size: 13px; line-height: 1.5">
+          <p style="margin: 0 0 8px"><b>Governance</b> — track your parcels, streetlights, drains.</p>
+          <p style="margin: 0 0 8px"><b>Jobs</b> — prep for BPSC, SSC, Railway, Bank exams together.</p>
+          <p style="margin: 0 0 8px"><b>Migration</b> — help each other land, live, and thrive outside.</p>
+          <p style="margin: 0"><b>Culture</b> — folk songs, festivals, food, film — kept vibrant.</p>
+        </div>
+
+        <div class="rail-footer" style="margin-top: 24px">
+          <a href="index.html">Home</a>
+          <a href="learn.html">Learn</a>
+          <a href="jobs.html">Jobs</a>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <script type="module" src="assets/js/shell.js?v=26"></script>
+  <script type="module" src="assets/js/compose_modal.js?v=26"></script>
+  <script type="module" src="assets/js/communities.js?v=26"></script>
+</body>
+</html>

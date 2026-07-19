@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Bihari Uncle — default male avatar. Kurta + gamchha, warm palette.
+     Uses currentColor for accent so it retints with the current theme. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Bihari uncle avatar">
+  <defs>
+    <linearGradient id="skinU" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F1B78A"/>
+      <stop offset="1" stop-color="#D89460"/>
+    </linearGradient>
+    <linearGradient id="kurtaU" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FDF6EC"/>
+      <stop offset="1" stop-color="#F3E4CD"/>
+    </linearGradient>
+    <pattern id="gamchhaU" x="0" y="0" width="18" height="18" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="18" height="18" fill="#DC2626"/>
+      <rect x="0" y="0" width="18" height="2" fill="#FDF6EC" opacity="0.85"/>
+      <rect x="0" y="9" width="18" height="2" fill="#FDF6EC" opacity="0.85"/>
+      <rect x="0" y="0" width="2" height="18" fill="#FDF6EC" opacity="0.85"/>
+      <rect x="9" y="0" width="2" height="18" fill="#FDF6EC" opacity="0.85"/>
+    </pattern>
+  </defs>
+
+  <!-- Warm background circle - uses currentColor so it retints with theme -->
+  <circle cx="100" cy="100" r="100" fill="currentColor" opacity="0.15"/>
+  <circle cx="100" cy="100" r="96" fill="#FEF3EE"/>
+
+  <!-- Neck -->
+  <rect x="86" y="130" width="28" height="20" rx="4" fill="url(#skinU)"/>
+
+  <!-- Kurta collar/shoulders -->
+  <path d="M 40 200 Q 40 155 100 150 Q 160 155 160 200 Z" fill="url(#kurtaU)"/>
+  <path d="M 88 148 Q 100 158 112 148 L 112 158 L 88 158 Z" fill="#B45309" opacity="0.55"/>
+  <!-- Kurta button placket -->
+  <line x1="100" y1="158" x2="100" y2="200" stroke="#B45309" stroke-width="1.4" opacity="0.5"/>
+  <circle cx="100" cy="168" r="1.6" fill="#B45309"/>
+  <circle cx="100" cy="180" r="1.6" fill="#B45309"/>
+
+  <!-- Gamchha draped over left shoulder -->
+  <path d="M 55 155 Q 45 148 60 138 Q 75 145 85 155 L 82 200 L 40 200 Z" fill="url(#gamchhaU)" opacity="0.95"/>
+  <path d="M 40 200 L 82 200 L 82 194 L 40 194 Z" fill="#FDF6EC" opacity="0.6"/>
+
+  <!-- Face -->
+  <ellipse cx="100" cy="100" rx="42" ry="46" fill="url(#skinU)"/>
+
+  <!-- Hair (Bihari short cut) -->
+  <path d="M 62 82 Q 60 55 100 52 Q 140 55 138 82 Q 130 74 122 76 Q 100 68 78 76 Q 70 74 62 82 Z" fill="#2A1810"/>
+  <!-- Sideburn -->
+  <path d="M 60 90 Q 58 100 63 108 L 68 106 Q 65 98 66 90 Z" fill="#2A1810"/>
+  <path d="M 140 90 Q 142 100 137 108 L 132 106 Q 135 98 134 90 Z" fill="#2A1810"/>
+
+  <!-- Ears -->
+  <ellipse cx="60" cy="102" rx="4" ry="7" fill="url(#skinU)"/>
+  <ellipse cx="140" cy="102" rx="4" ry="7" fill="url(#skinU)"/>
+
+  <!-- Eyebrows -->
+  <path d="M 78 90 Q 84 86 92 90" stroke="#2A1810" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M 108 90 Q 116 86 122 90" stroke="#2A1810" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Eyes -->
+  <ellipse cx="85" cy="98" rx="3.5" ry="4" fill="#2A1810"/>
+  <ellipse cx="115" cy="98" rx="3.5" ry="4" fill="#2A1810"/>
+  <circle cx="86" cy="97" r="1.1" fill="#FFFFFF"/>
+  <circle cx="116" cy="97" r="1.1" fill="#FFFFFF"/>
+
+  <!-- Nose -->
+  <path d="M 100 102 Q 96 116 100 122 Q 104 120 104 118" stroke="#B47850" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+
+  <!-- Moustache (Bihari trademark) -->
+  <path d="M 82 128 Q 92 124 100 128 Q 108 124 118 128 Q 110 134 100 132 Q 90 134 82 128 Z" fill="#2A1810"/>
+
+  <!-- Mouth -->
+  <path d="M 92 138 Q 100 142 108 138" stroke="#8B3A2A" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+
+  <!-- Tilak (subtle vertical mark on forehead) -->
+  <ellipse cx="100" cy="72" rx="2" ry="6" fill="#DC2626" opacity="0.7"/>
+</svg>

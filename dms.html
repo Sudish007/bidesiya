@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Messages · Bidesiya</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="assets/css/style.css?v=26" />
+</head>
+<body>
+  <div class="app-shell">
+    <div id="shell"></div>
+
+    <main class="main-column">
+      <section class="center-column">
+        <div class="dm-layout">
+          <aside class="dm-sidebar">
+            <div class="dm-sidebar-header">
+              <h2 style="margin:0; font-size: 18px; font-weight: 700">Messages</h2>
+            </div>
+            <div id="dm-list">
+              <div class="subtle" style="padding: 12px">Loading…</div>
+            </div>
+          </aside>
+
+          <section class="dm-thread" id="dm-thread">
+            <div class="dm-empty">
+              <div style="font-size: 48px; opacity: 0.35">💬</div>
+              <div style="margin-top: 12px; font-weight: 600">Your messages</div>
+              <div class="subtle" style="margin-top: 4px">Pick a chat, or start a new one from someone's profile.</div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="assets/js/shell.js?v=26"></script>
+  <script type="module" src="assets/js/dms.js?v=26"></script>
+</body>
+</html>

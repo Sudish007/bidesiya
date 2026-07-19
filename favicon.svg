@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Bidesiya favicon — the "बि" letterform.
+  The Devanagari letter that starts the app's name IS the mark. Bihar-first,
+  Bharat-wide. Sunrise gradient anchors it to the Chhath / warm-home palette.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Bidesiya">
+  <defs>
+    <linearGradient id="fav-bg" x1="0.15" y1="0.05" x2="0.85" y2="0.95">
+      <stop offset="0"    stop-color="#F43F5E"/>
+      <stop offset="0.55" stop-color="#F97316"/>
+      <stop offset="1"    stop-color="#FBBF24"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="32" height="32" rx="8" fill="url(#fav-bg)"/>
+  <text x="16" y="26" text-anchor="middle"
+        font-family="'Noto Sans Devanagari','Mangal','Kohinoor Devanagari','Rozha One',system-ui,serif"
+        font-size="26" font-weight="700"
+        fill="#FFFAF0" letter-spacing="0">बि</text>
+</svg>

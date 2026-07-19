@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Community · Bidesiya</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="assets/css/style.css?v=26" />
+</head>
+<body>
+  <div class="app-shell">
+    <div id="shell"></div>
+
+    <main class="main-column">
+      <section class="center-column">
+        <header class="community-hero" id="community-hero">
+          <div class="subtle">Loading…</div>
+        </header>
+
+        <div style="display:flex; align-items:center; justify-content:space-between; margin: 16px 0">
+          <div class="tab-strip">
+            <button class="tab active" data-view="posts">Posts</button>
+            <button class="tab" data-view="members">Members</button>
+            <button class="tab" data-view="about">About</button>
+          </div>
+          <button class="btn btn-primary" id="btn-community-post">Post here</button>
+        </div>
+
+        <div id="community-body">
+          <div class="banner banner-info">Loading…</div>
+        </div>
+      </section>
+
+      <aside class="right-rail">
+        <div class="rail-heading">
+          <span class="title">Explore</span>
+        </div>
+        <a href="communities.html" class="btn btn-outline btn-block" style="margin-bottom: 8px">All communities</a>
+        <div id="related"><div class="subtle">…</div></div>
+        <div class="rail-footer" style="margin-top: 20px">
+          <a href="index.html">Home</a>
+          <a href="learn.html">Learn</a>
+          <a href="jobs.html">Jobs</a>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <script type="module" src="assets/js/shell.js?v=26"></script>
+  <script type="module" src="assets/js/compose_modal.js?v=26"></script>
+  <script type="module" src="assets/js/community.js?v=26"></script>
+</body>
+</html>

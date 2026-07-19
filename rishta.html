@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rishta · Bidesiya</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="assets/css/style.css?v=26" />
+</head>
+<body>
+  <div class="app-shell">
+    <div id="shell"></div>
+
+    <main class="main-column">
+      <section class="center-column">
+        <div class="section-banner"><img src="assets/img/banner-rishta.svg?v=26" alt="Rishta matrimony" /></div>
+        <div id="rishta-view">
+          <div class="banner banner-info">Loading…</div>
+        </div>
+      </section>
+
+      <aside class="right-rail">
+        <div class="rail-heading"><span class="title">About Rishta</span></div>
+        <div class="card" style="padding: 14px; font-size: 13px; line-height: 1.55">
+          <p style="margin: 0 0 10px"><b>Bidesiya's Rishta is different by design:</b></p>
+          <ul style="margin: 0 0 10px; padding-left: 18px">
+            <li>No caste, sub-caste, or gotra fields — ever.</li>
+            <li>No dowry, gift, or wedding-budget fields.</li>
+            <li>No skin-tone or complexion filter.</li>
+            <li>Manglik / kundli-matching not part of the app.</li>
+          </ul>
+          <p style="margin: 0 0 10px">Matches are based on age, region, language, education, profession, diet, and values — not birth-community.</p>
+          <p style="margin: 0"><b>Express interest</b> before messaging. Full DMs unlock only after both people say yes.</p>
+        </div>
+
+        <div id="incoming-interests" style="margin-top: 20px" hidden>
+          <div class="rail-heading"><span class="title">Received interests</span></div>
+          <div id="incoming-list"></div>
+        </div>
+
+        <div class="rail-footer" style="margin-top: 24px">
+          <a href="index.html">Home</a>
+          <a href="communities.html">Communities</a>
+          <a href="tourism.html">Tourism</a>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <script type="module" src="assets/js/shell.js?v=26"></script>
+  <script type="module" src="assets/js/rishta.js?v=26"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Notification — Bidesiya</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <div id="shell"></div>
+    <main class="main-column" style="max-width: 780px; margin: 0 auto">
+      <section id="notification" class="center-column" style="flex: 1 1 100%; max-width: 100%"></section>
+    </main>
+  </div>
+
+  <script type="module" src="assets/js/shell.js"></script>
+  <script type="module" src="assets/js/compose_modal.js"></script>
+  <script type="module">
+    import { mountShell } from './assets/js/shell.js';
+    mountShell('updates');
+  </script>
+  <script type="module" src="assets/js/notification.js"></script>
+</body>
+</html>

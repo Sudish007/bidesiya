@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Events · Bidesiya</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="assets/css/style.css?v=26" />
+</head>
+<body>
+  <div class="app-shell">
+    <div id="shell"></div>
+
+    <main class="main-column">
+      <section class="center-column">
+        <div class="section-banner"><img src="assets/img/banner-events.svg?v=26" alt="Chhath and Bihar festivals" /></div>
+        <header class="communities-header">
+          <div>
+            <h1 style="margin:0; font-size: 26px; font-weight: 800;">Events</h1>
+            <p class="subtle" style="margin: 4px 0 0">Bihar's cultural calendar. Chhath, exams, meetups, ghats.</p>
+          </div>
+          <button class="btn btn-primary" id="btn-new-event">+ New event</button>
+        </header>
+
+        <div class="community-tabs" id="event-tabs">
+          <button class="tab active" data-kind="">All</button>
+          <button class="tab" data-kind="festival">Festivals</button>
+          <button class="tab" data-kind="exam">Exams</button>
+          <button class="tab" data-kind="meetup">Meetups</button>
+          <button class="tab" data-kind="market">Markets</button>
+          <button class="tab" data-kind="screening">Screenings</button>
+        </div>
+
+        <div id="events-list">
+          <div class="banner banner-info">Loading events…</div>
+        </div>
+      </section>
+
+      <aside class="right-rail">
+        <div class="rail-heading">
+          <span class="title">Why events?</span>
+        </div>
+        <div class="card" style="padding: 14px; font-size: 13px; line-height: 1.5">
+          <p style="margin: 0 0 8px">Nobody else organises Bihar's calendar like this — Chhath ghat schedules, exam dates, and community meetups in one place.</p>
+          <p style="margin: 0"><b>RSVP going</b> so hosts know how much prasad and chai to arrange.</p>
+        </div>
+
+        <div class="rail-footer" style="margin-top: 24px">
+          <a href="index.html">Home</a>
+          <a href="communities.html">Communities</a>
+          <a href="updates.html">Updates</a>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <script type="module" src="assets/js/shell.js?v=26"></script>
+  <script type="module" src="assets/js/events.js?v=26"></script>
+</body>
+</html>

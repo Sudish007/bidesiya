@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Rishta banner — mehndi-decorated hand + phool + kalash. Caste-free, dowry-free. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 180" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Rishta — dignity-first matrimony">
+  <defs>
+    <linearGradient id="bgRs" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFE4E6"/>
+      <stop offset="1" stop-color="#FEF3EE"/>
+    </linearGradient>
+    <linearGradient id="handRs" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F4C29A"/>
+      <stop offset="1" stop-color="#D89460"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="180" fill="url(#bgRs)"/>
+
+  <!-- Faint mandala background -->
+  <g transform="translate(720 90)" opacity="0.15">
+    <circle r="70" fill="none" stroke="#DC2626" stroke-width="1.5"/>
+    <circle r="55" fill="none" stroke="#DC2626" stroke-width="1"/>
+    <circle r="40" fill="none" stroke="#DC2626" stroke-width="1"/>
+    <g stroke="#DC2626" stroke-width="1">
+      <line x1="-70" y1="0" x2="70" y2="0"/>
+      <line x1="0" y1="-70" x2="0" y2="70"/>
+      <line x1="-49" y1="-49" x2="49" y2="49"/>
+      <line x1="-49" y1="49" x2="49" y2="-49"/>
+    </g>
+  </g>
+
+  <!-- Kalash (right side) -->
+  <g transform="translate(720 60)">
+    <!-- Base plate -->
+    <ellipse cx="0" cy="100" rx="45" ry="8" fill="#B45309"/>
+    <!-- Kalash body (round pot) -->
+    <path d="M -30 95
+             C -35 60, -35 40, 0 35
+             C 35 40, 35 60, 30 95 Z" fill="#B45309" stroke="#8B4513" stroke-width="1.5"/>
+    <!-- Kalash decorative bands -->
+    <path d="M -32 55 Q 0 60 32 55" stroke="#FBBF24" stroke-width="2" fill="none"/>
+    <path d="M -34 75 Q 0 80 34 75" stroke="#FDF6EC" stroke-width="1.5" fill="none"/>
+    <!-- Neck -->
+    <rect x="-14" y="20" width="28" height="18" fill="#B45309" stroke="#8B4513" stroke-width="1.2"/>
+    <!-- Coconut on top -->
+    <ellipse cx="0" cy="10" rx="16" ry="14" fill="#8B4513"/>
+    <path d="M -16 10 Q 0 -2 16 10" fill="#B45309"/>
+    <!-- Mango leaves around coconut -->
+    <path d="M -18 12 Q -25 -2 -20 -12 Q -12 -6 -14 8 Z" fill="#16A34A"/>
+    <path d="M 18 12 Q 25 -2 20 -12 Q 12 -6 14 8 Z" fill="#16A34A"/>
+    <path d="M -8 6 Q -16 -8 -6 -18 Q 0 -12 -4 4 Z" fill="#16A34A"/>
+    <path d="M 8 6 Q 16 -8 6 -18 Q 0 -12 4 4 Z" fill="#16A34A"/>
+    <!-- Tilak on kalash -->
+    <path d="M -4 65 L 4 65 L 0 80 Z" fill="#DC2626"/>
+    <circle cx="0" cy="70" r="2" fill="#FBBF24"/>
+  </g>
+
+  <!-- Mehndi-decorated hand (left side, palm up) -->
+  <g transform="translate(280 70)">
+    <!-- Palm -->
+    <ellipse cx="0" cy="30" rx="40" ry="45" fill="url(#handRs)"/>
+    <!-- Fingers -->
+    <ellipse cx="-24" cy="-8" rx="8" ry="20" fill="url(#handRs)"/>
+    <ellipse cx="-8" cy="-18" rx="8" ry="26" fill="url(#handRs)"/>
+    <ellipse cx="10" cy="-18" rx="8" ry="26" fill="url(#handRs)"/>
+    <ellipse cx="26" cy="-10" rx="8" ry="22" fill="url(#handRs)"/>
+    <!-- Thumb -->
+    <ellipse cx="-40" cy="18" rx="10" ry="16" fill="url(#handRs)" transform="rotate(-30 -40 18)"/>
+
+    <!-- Wrist -->
+    <rect x="-25" y="65" width="50" height="20" rx="5" fill="url(#handRs)"/>
+
+    <!-- Mehndi design on palm — central flower + dots + swirls -->
+    <g fill="#8B3A2A" opacity="0.85">
+      <!-- Central mandala flower -->
+      <circle cx="0" cy="25" r="8" fill="none" stroke="#8B3A2A" stroke-width="1.5"/>
+      <circle cx="0" cy="25" r="3"/>
+      <!-- Petals -->
+      <ellipse cx="0" cy="14" rx="2.5" ry="5"/>
+      <ellipse cx="0" cy="36" rx="2.5" ry="5"/>
+      <ellipse cx="-11" cy="25" rx="5" ry="2.5"/>
+      <ellipse cx="11" cy="25" rx="5" ry="2.5"/>
+      <ellipse cx="-8" cy="17" rx="2" ry="4" transform="rotate(-45 -8 17)"/>
+      <ellipse cx="8" cy="17" rx="2" ry="4" transform="rotate(45 8 17)"/>
+      <ellipse cx="-8" cy="33" rx="2" ry="4" transform="rotate(45 -8 33)"/>
+      <ellipse cx="8" cy="33" rx="2" ry="4" transform="rotate(-45 8 33)"/>
+
+      <!-- Vines on fingers -->
+      <circle cx="-24" cy="-2" r="1.5"/>
+      <circle cx="-24" cy="6" r="1.5"/>
+      <circle cx="-24" cy="14" r="1.5"/>
+      <circle cx="-8" cy="-12" r="1.5"/>
+      <circle cx="-8" cy="-2" r="1.5"/>
+      <circle cx="-8" cy="8" r="1.5"/>
+      <circle cx="10" cy="-12" r="1.5"/>
+      <circle cx="10" cy="-2" r="1.5"/>
+      <circle cx="10" cy="8" r="1.5"/>
+      <circle cx="26" cy="-4" r="1.5"/>
+      <circle cx="26" cy="6" r="1.5"/>
+      <circle cx="26" cy="14" r="1.5"/>
+
+      <!-- Wrist band pattern -->
+      <path d="M -20 70 Q 0 75 20 70" stroke="#8B3A2A" stroke-width="1.5" fill="none"/>
+      <path d="M -20 78 Q 0 82 20 78" stroke="#8B3A2A" stroke-width="1.5" fill="none"/>
+      <circle cx="-15" cy="74" r="1.2"/>
+      <circle cx="0" cy="76" r="1.2"/>
+      <circle cx="15" cy="74" r="1.2"/>
+    </g>
+
+    <!-- Small flower petal held in fingers -->
+    <g transform="translate(0 -30)">
+      <path d="M 0 0 Q 6 -8 0 -12 Q -6 -8 0 0 Z" fill="#F43F5E"/>
+      <path d="M 0 0 Q 8 4 6 12 Q 0 8 0 0 Z" fill="#F97316"/>
+      <path d="M 0 0 Q -8 4 -6 12 Q 0 8 0 0 Z" fill="#F97316"/>
+      <circle cx="0" cy="0" r="2" fill="#FBBF24"/>
+    </g>
+  </g>
+
+  <!-- Text -->
+  <text x="440" y="70" font-family="'Georgia', serif" font-size="36" font-weight="800" fill="#8B1D34">Rishta</text>
+  <text x="440" y="95" font-family="Arial, sans-serif" font-size="14" fill="#8B3A2A" font-weight="600">Caste-free · Dowry-free · Dignity-first</text>
+  <text x="440" y="118" font-family="Arial, sans-serif" font-size="11" fill="#B45309" opacity="0.85">Find your person on your own terms</text>
+</svg>

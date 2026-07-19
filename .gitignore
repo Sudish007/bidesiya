@@ -1,0 +1,27 @@
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.idea/
+.vscode/
+*.swp
+
+# Local dev
+node_modules/
+__pycache__/
+*.pyc
+
+# User-uploaded content and local DB — never commit
+uploads/
+*.db
+*.db-journal
+
+# Local env files
+.env
+.env.local
+
+# Any experiment / temp scripts left behind
+*.tmp
+tools/*.tmp

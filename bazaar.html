@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bazaar · Bidesiya</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="assets/css/style.css?v=26" />
+</head>
+<body>
+  <div class="app-shell">
+    <div id="shell"></div>
+
+    <main class="main-column">
+      <section class="center-column">
+        <div class="section-banner"><img src="assets/img/banner-bazaar.svg?v=26" alt="Bidesiya Bazaar marketplace" /></div>
+        <header class="communities-header">
+          <div>
+            <h1 style="margin:0; font-size: 26px; font-weight: 800">Bazaar</h1>
+            <p class="subtle" style="margin: 4px 0 0">Buy and sell — farm goods, handicrafts, services, second-hand.</p>
+          </div>
+          <button class="btn btn-primary" id="btn-sell">+ Sell something</button>
+        </header>
+
+        <div class="bazaar-cats" id="cat-tabs">
+          <button class="bcat active" data-cat=""><span>🛍️</span>All</button>
+          <button class="bcat" data-cat="farm-produce"><span>🌾</span>Farm</button>
+          <button class="bcat" data-cat="handicraft"><span>🎨</span>Handicraft</button>
+          <button class="bcat" data-cat="home-food"><span>🥘</span>Home food</button>
+          <button class="bcat" data-cat="livestock"><span>🐄</span>Livestock</button>
+          <button class="bcat" data-cat="vehicles"><span>🚲</span>Vehicles</button>
+          <button class="bcat" data-cat="electronics"><span>📱</span>Electronics</button>
+          <button class="bcat" data-cat="furniture"><span>🪑</span>Furniture</button>
+          <button class="bcat" data-cat="books"><span>📚</span>Books</button>
+          <button class="bcat" data-cat="clothes"><span>👗</span>Clothes</button>
+          <button class="bcat" data-cat="services"><span>🔧</span>Services</button>
+          <button class="bcat" data-cat="property"><span>🏘️</span>Property</button>
+          <button class="bcat" data-cat="other"><span>📦</span>Other</button>
+        </div>
+
+        <div class="bazaar-filters" style="display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap">
+          <input class="input" id="f-search" placeholder="Search listings…" style="flex: 1; min-width: 180px" />
+          <input class="input" id="f-district" placeholder="District (e.g. Patna)" style="max-width: 180px" />
+          <input class="input" id="f-max-price" placeholder="Max ₹" type="number" min="0" style="max-width: 120px" />
+        </div>
+
+        <div id="listings-grid" class="listings-grid">
+          <div class="banner banner-info">Loading…</div>
+        </div>
+      </section>
+
+      <aside class="right-rail">
+        <div class="rail-heading">
+          <span class="title">My listings</span>
+        </div>
+        <div id="my-listings-mini"><div class="subtle">…</div></div>
+
+        <div class="rail-heading" style="margin-top: 24px">
+          <span class="title">Why sell here?</span>
+        </div>
+        <div class="card" style="padding: 14px; font-size: 13px; line-height: 1.55">
+          <p style="margin: 0 0 8px">Direct to buyer — no middleman markup.</p>
+          <p style="margin: 0 0 8px">Buyers reach you via <b>Bidesiya messages</b>. Your phone stays private unless you share it.</p>
+          <p style="margin: 0">Best fits: farm produce (litchi, makhana, sattu, rice), handicrafts (Madhubani, silk, sikki), and services (tuition, tailoring).</p>
+        </div>
+
+        <div class="rail-footer" style="margin-top: 24px">
+          <a href="index.html">Home</a>
+          <a href="jobs.html">Jobs</a>
+          <a href="tourism.html">Tourism</a>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <script type="module" src="assets/js/shell.js?v=26"></script>
+  <script type="module" src="assets/js/bazaar.js?v=26"></script>
+</body>
+</html>
