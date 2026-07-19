@@ -27,11 +27,6 @@ services:
         name: Referrer-Policy
         value: strict-origin-when-cross-origin
 
-    # Pretty routes: /auth → /auth.html
-    routes:
-      - type: rewrite
-        source: /auth
-        destination: /auth.html
-      - type: rewrite
-        source: /feed
-        destination: /index.html
+    # No rewrite rules — serve .html files directly. Adding a rewrite for /auth
+    # was hiding /auth.html on Render, which broke every internal link that
+    # points at .html files (which is all of them).
