@@ -1,0 +1,37 @@
+# Render.com blueprint — static site.
+# No build step: HTML/CSS/JS is served straight from this directory.
+# Docs: https://render.com/docs/blueprint-spec
+
+services:
+  - type: web
+    name: bidesiya-web
+    runtime: static
+    branch: main
+    buildCommand: ""
+    staticPublishPath: .
+    pullRequestPreviewsEnabled: false
+
+    # Cache assets aggressively; HTML briefly so cache-buster bumps take effect quickly.
+    headers:
+      - path: /assets/*
+        name: Cache-Control
+        value: public, max-age=86400
+      - path: /*.html
+        name: Cache-Control
+        value: public, max-age=300
+      # Security headers (safe defaults)
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: Referrer-Policy
+        value: strict-origin-when-cross-origin
+
+    # Pretty routes: /auth → /auth.html
+    routes:
+      - type: rewrite
+        source: /auth
+        destination: /auth.html
+      - type: rewrite
+        source: /feed
+        destination: /index.html
